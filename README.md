@@ -24,9 +24,7 @@ Because the model is executable (each slice has a Given/When/Then specification)
 
 ### The Event Model for this project
 
-[See the full Event Model for the Warehouse](#)
-
-A machine-readable export of the model is checked in as `[config.json](./config.json)`, following the [Event Modeling specification](https://github.com/dilgerma/event-modeling-spec). The file `[references/reference_book_concepts.md](./references/reference_book_concepts.md)` summarises the key ideas.
+[See the full Event Model for the Warehouse](https://miro.com/app/board/uXjVGxzIT6Y=/?share_link_id=482143937751)
 
 ---
 
