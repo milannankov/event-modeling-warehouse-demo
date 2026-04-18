@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="warehouse.web/Warehouse.csproj" />
+  <Project Path="warehouse.tests/Warehouse.Tests.csproj" />
+</Solution>

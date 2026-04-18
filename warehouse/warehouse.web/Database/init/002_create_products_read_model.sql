@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS products (
+    stream_id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    ean TEXT NOT NULL UNIQUE
+);

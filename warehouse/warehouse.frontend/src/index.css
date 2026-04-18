@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f5f7fa;
+  color: #1a1a2e;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #1a1a2e;
+  color: #e0e0e0;
+  padding: 24px 16px;
+  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 4px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 12px;
+  color: #b0b0c0;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebar a:hover {
+  background: #2a2a4a;
+  color: #fff;
+}
+
+.sidebar a.active {
+  background: #3a3a6a;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 32px 40px;
+  max-width: 960px;
+  margin-left: 220px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #1a1a2e;
+}
+
+/* Forms */
+.form {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.form h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.form-row label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-row input,
+.form-row select,
+.form-column input,
+.form-column select {
+  padding: 8px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 140px;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-column input:focus,
+.form-column select:focus {
+  outline: none;
+  border-color: #3a3a6a;
+  box-shadow: 0 0 0 2px rgba(58, 58, 106, 0.15);
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+  max-width: 320px;
+}
+
+.form-column label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-column button {
+  align-self: flex-start;
+}
+
+button {
+  padding: 8px 20px;
+  background: #3a3a6a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+
+button:hover {
+  background: #2a2a5a;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.refresh-btn {
+  margin-bottom: 16px;
+  background: #e0e0e0;
+  color: #333;
+}
+
+.refresh-btn:hover {
+  background: #d0d0d0;
+}
+
+.new-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #3a3a6a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  transition: background 0.15s;
+}
+
+.new-btn:hover {
+  background: #2a2a5a;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #f0f0f5;
+}
+
+th {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 10px 16px;
+  font-size: 14px;
+  border-top: 1px solid #f0f0f0;
+}
+
+tr:hover {
+  background: #fafafa;
+}
+
+tr.low-stock td {
+  background: #fff3f3;
+  color: #c0392b;
+}
+
+.empty {
+  text-align: center;
+  color: #999;
+  padding: 24px 16px;
+  font-style: italic;
+}
+
+/* Messages */
+.error {
+  color: #c0392b;
+  background: #fdeaea;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.success {
+  color: #27ae60;
+  background: #eafaf1;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  margin-top: 12px;
+}

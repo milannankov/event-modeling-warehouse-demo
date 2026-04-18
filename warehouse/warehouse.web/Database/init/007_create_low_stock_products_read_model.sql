@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS low_stock_products (
+    ean TEXT PRIMARY KEY,
+    name TEXT NOT NULL DEFAULT '',
+    eu_vat TEXT NOT NULL DEFAULT '',
+    price REAL NOT NULL DEFAULT 0,
+    quantity INTEGER NOT NULL DEFAULT 0
+);
